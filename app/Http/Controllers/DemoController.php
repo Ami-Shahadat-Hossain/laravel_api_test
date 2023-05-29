@@ -58,4 +58,14 @@ class DemoController extends Controller
         }
         return response()->cookie(['remember_token' => $rememberToken]);
     }
+
+    public function profile()
+    {
+        return 'This is the secret profile page';
+    }
+
+    public function settings()
+    {
+        return 'This is the secret settings page';
+    }
 }
